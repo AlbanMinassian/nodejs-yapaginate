@@ -1,0 +1,19 @@
+{
+  "author": "Alban Minassian",
+  "name": "nodejs-yapaginate",
+  "description": "yet another paginate view helper",
+  "version": "0.0.1",
+  "main": "lib/mains.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "",
+    "should": ""  
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
