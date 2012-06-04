@@ -4,7 +4,24 @@
 nodejs-yapaginate 
 =========================================================
 
-Yet another paginate view helper for nodejs. Generate html twitter bootstrap pagination.
+Yet another paginate view helper for nodejs. 
+
+Generate html `twitter bootstrap pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_.
+
+Example :: 
+
+    <div class="pagination">
+      <ul>
+        <li><a href="#">Prev</a></li>
+        <li class="active">
+          <a href="#">1</a>
+        </li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
 
 Usage
 ------------------------------------------
