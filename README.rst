@@ -6,9 +6,7 @@ nodejs-yapaginate
 
 Yet another paginate view helper for nodejs. 
 
-Generate html `twitter bootstrap pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_.
-
-Example :: 
+Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_. :: 
 
     <div class="pagination">
       <ul>
@@ -37,22 +35,22 @@ Options
 ============= =================== ===========================================
 name          default             description  
 ============= =================== ===========================================
-totalItem     1000;               total items
-itemPerPage   10;                 items per page
-currentPage   1;                  current selected page
+totalItem     1000                total items
+itemPerPage   10                  items per page
+currentPage   1                   current selected page
 url           '/unknowurl'        default link 
 params        {}                  your personnal params add to link : if {aa:bb} => url?aa=bb
-parampageno   'pageno';           key name add to link : url?pageno=10
-showPrevNext  true;               show previous and next button 
+parampageno   'pageno'            key name add to link : url?pageno=10
+showPrevNext  true                show previous and next button 
 showFirstLast true                show first and last button   
 hideDots      false               hide dots separator
-DotsMidSize   4;                  show X step before and after current page ( if hideDots = true )
+DotsMidSize   4                   show X step before and after current page ( if hideDots = true )
 DotsEndSize   2                   show X step after first and before end page ( if hideDots = true )
-dotText       '&#8230;';          text for dots separator ( if hideDots = true )
-firstText     '&laquo&laquo';     text for goto first page
-prevText      '&laquo';           text for goto previous page
-nextText      '&raquo';           text for goto next page
-lastText      '&raquo&raquo';     text for goto last page
+dotText       '&#8230;'           text for dots separator ( if hideDots = true )
+firstText     '&laquo&laquo'      text for goto first page
+prevText      '&laquo'            text for goto previous page
+nextText      '&raquo'            text for goto next page
+lastText      '&raquo&raquo'      text for goto last page
 showCR        false               add \\n (only for debug)
 ============= =================== ===========================================
 
