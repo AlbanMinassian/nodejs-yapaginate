@@ -1,8 +1,8 @@
 {
-  "author": "Alban Minassian",
+  "author": "ami44",
   "name": "nodejs-yapaginate",
   "description": "yet another paginate view helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/mains.js",
   "scripts": {
     "test": "mocha test/*.js"
@@ -15,5 +15,15 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ami44/nodejs-yapaginate"
+    },
+    "keywords" : [ "page", "paginate", "pagination", "twitter bootstrap"],
+    "bugs" : {
+        "url" : "https://github.com/ami44/nodejs-yapaginate/issues"
+    }
+
+
 }
