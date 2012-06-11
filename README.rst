@@ -6,7 +6,7 @@ nodejs-yapaginate
 
 Yet another paginate view helper for nodejs. 
 
-Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_. :: 
+Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_.
 
 .. image:: ./media/pagination.png
 
