@@ -11,6 +11,7 @@ Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap
 .. image:: ./media/pagination.png
 
 
+
 Usage
 ------------------------------------------
 
