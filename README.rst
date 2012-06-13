@@ -8,7 +8,7 @@ Yet another paginate view helper for nodejs.
 
 Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_.
 
-.. image:: ./media/pagination.png
+.. image:: https://github.com/ami44/nodejs-yapaginate/raw/master/media/pagination.png
 
 
 
