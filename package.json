@@ -1,29 +1,27 @@
 {
-  "author": "ami44",
-  "name": "nodejs-yapaginate",
-  "description": "yet another paginate view helper",
-  "version": "0.0.3",
-  "main": "lib/mains.js",
-  "scripts": {
-    "test": "mocha test/*.js"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "",
-    "should": ""  
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
-  },
+    "author": "ami44",
+    "name": "nodejs-yapaginate",
+    "description": "yet another paginate view helper",
+    "version": "0.0.4",
+    "main": "lib/mains.js",
+    "scripts": {
+        "test": "mocha test/*.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "",
+        "should": ""  
+    },
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    },
     "repository": {
-    "type": "git",
-    "url": "https://github.com/ami44/nodejs-yapaginate"
+        "type": "git",
+        "url": "https://github.com/ami44/nodejs-yapaginate"
     },
     "keywords" : [ "page", "paginate", "pagination", "twitter bootstrap"],
     "bugs" : {
         "url" : "https://github.com/ami44/nodejs-yapaginate/issues"
     }
-
-
 }
