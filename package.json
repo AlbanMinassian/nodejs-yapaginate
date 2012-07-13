@@ -2,7 +2,7 @@
     "author": "ami44",
     "name": "nodejs-yapaginate",
     "description": "yet another paginate view helper",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "lib/mains.js",
     "scripts": {
         "test": "mocha test/*.js"
@@ -10,7 +10,8 @@
     "dependencies": {},
     "devDependencies": {
         "mocha": "",
-        "should": ""  
+        "should": "",  
+        "underscore": ""  
     },
     "optionalDependencies": {},
     "engines": {
