@@ -37,14 +37,12 @@ npm :
 ....................................................
 
 
-- Edit ``package.json``
-- Add :
+- Edit your ``package.json``
+- Add ::
 
-    .. code-block:: json
-
-        "dependencies": {
-            "nodejs-yapaginate": ""
-        },
+    "dependencies": {
+        "nodejs-yapaginate": ""
+    },
 
 - Execute ``npm install``
 - Add ``var paginate = require('nodejs-yapaginate');`` in your code
@@ -53,9 +51,9 @@ npm :
 browser (backbone, derbyjs ...)
 ................................................................
 
-.. code-block:: html
+Add ::
 
-    <script src="/assets/nodejs-yapaginate/lib/main.js"></script>
+    <script src="/nodejs-yapaginate/lib/main.js"></script>
 
 Usage
 ------------------------------------------
