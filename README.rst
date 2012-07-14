@@ -40,7 +40,7 @@ npm :
 - Edit your ``package.json``
 - Add ::
 
-    "dependencies": {
+    "dependencies": { 
         "nodejs-yapaginate": ""
     },
 
