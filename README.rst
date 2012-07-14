@@ -92,7 +92,7 @@ nextText      '&raquo;'           text for goto next page
 lastText      '&raquo;&raquo;'    text for goto last page
 addSep        ''                  add \\n in html output (only for debug)
 getJson        false              get only Json ( not generate Html )
-setJson        null               consume json (nodejs-yapaginate compatible) to generate html (not use getJson and setJson)
+setJson        false               consume json (nodejs-yapaginate compatible) to generate html (not use getJson and setJson)
 ============= =================== ===========================================
 
 
