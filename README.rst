@@ -30,19 +30,42 @@ or json for another usage ::
         last: { cssclass: '', href: '/unknowurl?pageno=100', text: '&raquo;&raquo;' } 
     }
 
+Install
+------------------------------------------
 
+npm :
+....................................................
+
+
+- Edit ``package.json``
+- Add :
+
+    .. code-block:: json
+
+        "dependencies": {
+            "nodejs-yapaginate": ""
+        },
+
+- Execute ``npm install``
+- Add ``var paginate = require('nodejs-yapaginate');`` in your code
+
+
+browser (backbone, derbyjs ...)
+................................................................
+
+.. code-block:: html
+
+    <script src="/assets/nodejs-yapaginate/lib/main.js"></script>
 
 Usage
 ------------------------------------------
 
 Html output :: 
-
-    var paginate = require('nodejs-yapaginate');
+    
     console.log(paginate({totalItem:100, itemPerPage:10, currentPage:2, url:'/mybeautifulapp'}));
 
 Json output :: 
 
-    var paginate = require('nodejs-yapaginate');
     console.log(paginate({totalItem:100, itemPerPage:10, currentPage:2, url:'/mybeautifulapp', getJson:true }));
     
 
