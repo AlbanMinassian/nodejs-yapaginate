@@ -37,12 +37,12 @@ Usage
 
 Html output :: 
 
-    var paginate = require('./lib/main');
+    var paginate = require('nodejs-yapaginate');
     console.log(paginate({totalItem:100, itemPerPage:10, currentPage:2, url:'/mybeautifulapp'}));
 
 Json output :: 
 
-    var paginate = require('./lib/main');
+    var paginate = require('nodejs-yapaginate');
     console.log(paginate({totalItem:100, itemPerPage:10, currentPage:2, url:'/mybeautifulapp', getJson:true }));
     
 

@@ -1,14 +1,16 @@
 // -*- coding: utf-8 -*-
 
+var libpath = process.env['NODEJSYAPAGINATE'] ? '../lib-cov' : '../lib';
+
 var should = require('should');
 var underscore = require('underscore');
-var paginate = require('../lib/main');
+var paginate = require(libpath+'/main');
 
 describe('paginate', function() {
     describe('with no arguments', function() {
         
         // ----------------------------------------------------------
-        // test no option
+        // test html / no option
         // ----------------------------------------------------------
         it('return valid html without option', function() {
             var result = paginate();
@@ -29,7 +31,7 @@ describe('paginate', function() {
         });
         
         // ----------------------------------------------------------
-        // test showStep
+        // test html / showStep option
         // ----------------------------------------------------------
         it('return html without step', function() {
             var result = paginate({showStep:false});
@@ -42,10 +44,10 @@ describe('paginate', function() {
         });
         
         // ----------------------------------------------------------
-        // test getJson
+        // test getJson, default option
         // ----------------------------------------------------------
         // http://stackoverflow.com/questions/201183/how-do-you-determine-equality-for-two-javascript-objects
-        it('return json', function() {
+        it('return json, default option', function() {
             
             var result = paginate({getJson:true});
             var shouldResult =  { 
@@ -67,6 +69,63 @@ describe('paginate', function() {
             };            
             underscore.isEqual(result, shouldResult).should.eql( true );
         });
+        
+        // ----------------------------------------------------------
+        // test getJson, set page 2/10
+        // ----------------------------------------------------------
+        // http://stackoverflow.com/questions/201183/how-do-you-determine-equality-for-two-javascript-objects
+        it('return json, set page 2/10', function() {
+            
+            var result = paginate({getJson:true, totalItem:100, itemPerPage:10, currentPage:2, url:'/mybeautifulapp' });
+            var shouldResult =  { 
+                options: { showFirstLast: true, showPrevNext: true, showStep: true },
+                first: { text: '&laquo;&laquo;', cssclass: '', href: '/mybeautifulapp?pageno=1' },
+                previous: { text: '&laquo;', cssclass: '', href: '/mybeautifulapp?pageno=1' },
+                step: [ 
+                    { ispageno: true,  cssclass: '', href: '/mybeautifulapp?pageno=1',  text: '1' },
+                    { ispageno: true, cssclass: 'active', href: '#', text: '2' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=3',  text: '3' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=4', text: '4' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=5', text: '5' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=6', text: '6' },
+                    { ispageno: false, cssclass: 'disabled', href: '#', text: '&#8230;' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=9', text: '9' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=10', text: '10' } 
+                ],
+                next: { text: '&raquo;', cssclass: '', href: '/mybeautifulapp?pageno=3' },
+                last: { text: '&raquo;&raquo;', cssclass: '', href: '/mybeautifulapp?pageno=10' } 
+            };            
+            underscore.isEqual(result, shouldResult).should.eql( true );
+        });
+        
+        
+        // ----------------------------------------------------------
+        // test getJson, set page 9/10
+        // ----------------------------------------------------------
+        // http://stackoverflow.com/questions/201183/how-do-you-determine-equality-for-two-javascript-objects
+        it('return json, set page 9/10', function() {
+            
+            var result = paginate({getJson:true, totalItem:100, itemPerPage:10, currentPage:10, url:'/mybeautifulapp' });
+            var shouldResult =  { 
+                options: { showFirstLast: true, showPrevNext: true, showStep: true },
+                first: { text: '&laquo;&laquo;', cssclass: '', href: '/mybeautifulapp?pageno=1' },
+                previous: { text: '&laquo;', cssclass: '', href: '/mybeautifulapp?pageno=9' },
+                step: [ 
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=1', text: '1' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=2', text: '2' },
+                    { ispageno: false, cssclass: 'disabled', href: '#', text: '&#8230;' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=6', text: '6' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=7', text: '7' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=8', text: '8' },
+                    { ispageno: true, cssclass: '', href: '/mybeautifulapp?pageno=9', text: '9' },
+                    { ispageno: true, cssclass: 'active', href: '#', text: '10' } 
+                ],
+                next: { text: '&raquo;', cssclass: 'disable', href: '#' },
+                last: { text: '&raquo;&raquo;', cssclass: 'disable', href: '#' } 
+            };            
+            underscore.isEqual(result, shouldResult).should.eql( true );
+        });
+        
         
         
         
