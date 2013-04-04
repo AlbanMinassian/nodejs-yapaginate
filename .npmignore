@@ -1,0 +1,7 @@
+.git
+test
+*.sock
+lib-cov
+editors
+support
+reports
