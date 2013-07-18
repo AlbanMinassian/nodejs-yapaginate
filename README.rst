@@ -1,5 +1,14 @@
-.. image:: https://secure.travis-ci.org/ami44/nodejs-yapaginate.png
-.. image:: https://nodei.co/npm-dl/nodejs-yapaginate.png
+|Travisci|_
+
+.. |Travisci| image:: https://secure.travis-ci.org/ami44/nodejs-yapaginate.png
+.. _Travisci: https://travis-ci.org/ami44/nodejs-yapaginate
+
+
+
+|Nodeico|_
+
+.. |Nodeico| image:: https://nodei.co/npm-dl/nodejs-yapaginate.png
+.. _Nodeico: https://nodei.co/npm-dl/nodejs-yapaginate/
 
 
 nodejs-yapaginate 
