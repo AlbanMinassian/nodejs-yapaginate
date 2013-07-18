@@ -1,5 +1,6 @@
-
 .. image:: https://secure.travis-ci.org/ami44/nodejs-yapaginate.png
+.. image:: https://nodei.co/npm-dl/nodejs-yapaginate.png
+
 
 nodejs-yapaginate 
 =========================================================
