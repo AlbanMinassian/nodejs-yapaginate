@@ -8,7 +8,7 @@
 |Nodeico|_
 
 .. |Nodeico| image:: https://nodei.co/npm-dl/nodejs-yapaginate.png
-.. _Nodeico: https://nodei.co/npm-dl/nodejs-yapaginate/
+.. _Nodeico: https://npmjs.org/package/nodejs-yapaginate
 
 
 nodejs-yapaginate 
