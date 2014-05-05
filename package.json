@@ -3,7 +3,7 @@
     "name": "nodejs-yapaginate",
     "description": "yet another paginate view helper",
     "version": "0.0.9",
-    "main": "index.js",
+    "main": "lib/main.js",
     "scripts": {
         "test": "mocha test/*.js"
     },
