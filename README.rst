@@ -108,4 +108,10 @@ setJson        false               consume json (nodejs-yapaginate compatible) t
 
 Licence
 ------------------------------------------
+
 Code licensed under the `GNU GENERAL PUBLIC LICENSE <http://www.gnu.org/copyleft/gpl.html>`_ Version 3 
+
+Alternative
+------------------------------------------
+
+https://github.com/mpipet/react-bootpage
